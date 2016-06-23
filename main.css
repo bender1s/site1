@@ -1,8 +1,10 @@
+
 html{
   align-items: center;
+  /*box-sizing: border-box;*/
   height: 100%;
   width: 100%;
-    background-color: rgba(255, 227, 207, .75);
+  background-color: rgba(255, 227, 207, .75);
 }
 h1 {
   display: block;
@@ -14,31 +16,46 @@ h1 {
   margin-left: 125px;
   margin-right: 125px;
   margin-top: 15px;
+  color: white;
+  text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+}
+.bar {
+    display: flex;
+    align-items: flex-start;;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 600px;
+    height: 20px;
+    background: white;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+    margin: 0;
+    border-bottom: 3px solid black;
 
 }
-header {
-  display: block;
-  justify-content: flex-start;
-  flex-direction: column;
-
-  top: 0;
-  position: fixed;
-  background-color: white;
-  height: 40px;
-  width: 100%;
-  margin: 0;
+.search {
+  order: 2;
+}
+.icon-1 {
+  order: 3;
+}
+.icon-2 .icon-3 {
+  order: 5;
+}
+.username {
+  order: 6;
+}
+.rightnav {
+  order: 44;
+}
+.leftnav {
+  order: -1;
 }
 
-ul {
-  display: flex;
-  width: 100%;
-  display: inline-flex;
-}
 
 body {
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
+
   position: absolute;
   width: 610px;
   top:20px;
@@ -57,7 +74,7 @@ body {
 }
 .top-layer {
   display: flex;
-  background-color: rgba(77, 193, 255, .5);
+  background-color: rgba(132, 35, 205, .5);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 5px;
@@ -67,16 +84,17 @@ body {
   margin: 2px;
   height: 100px;
   width: 600px;
-  border: 5px solid rgba(77, 193, 255, 1);
+  border: 5px solid rgba(132, 35, 205, 1);
+
 }
 .second-layer {
   display: flex;
-  background-color: rgba(132, 35, 205, .5);
+  border: 5px solid rgba(77, 193, 255, 1);
   border-radius: 5px;
   margin: 2px;
   height: 100px;
   width: 600px;
-  border: 5px solid rgba(132, 35, 205, 1);
+  background-color: rgba(77, 193, 255, .5);
 }
 .third-layer {
   display: flex;
@@ -98,7 +116,7 @@ body {
 }
 .bottom-layer {
   display: flex;
-  background-color: rgba(204, 118, 93, .5);
+  background-color: rgba(132, 35, 205, .5);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 20px;
@@ -106,5 +124,5 @@ body {
   margin: 2px;
   height: 100px;
   width: 600px;
-  border: 5px solid rgba(204, 118, 93, 1);
+  border: 5px solid rgba(132, 35, 205, 1);
 }
