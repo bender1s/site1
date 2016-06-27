@@ -4,7 +4,7 @@ html{
   /*box-sizing: border-box;*/
   height: 100%;
   width: 100%;
-  background-color: rgba(211, 211, 211, .5);
+  background-color: rgba(133, 133, 133, .5);
 }
 h1 {
   display: flex;
@@ -33,8 +33,6 @@ h1 {
     margin: 0;
     border-bottom: 3px solid black;
 }
-
-
 
 .search {
   order: 2;
@@ -86,6 +84,8 @@ body {
   height: 100px;
   width: 600px;
   border: 5px solid rgba(132, 35, 205, 1);
+  justify-content: flex-start;
+  align-items: center;
 
 }
 .second-layer {
@@ -96,6 +96,8 @@ body {
   height: 100px;
   width: 600px;
   border: 5px solid rgba(205, 49, 78, 1);
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .third-layer {
@@ -106,6 +108,8 @@ body {
   height: 100px;
   width: 600px;
   border: 5px solid rgba(194, 109, 204, 1);
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .fourth-layer {
@@ -116,6 +120,8 @@ body {
   height: 100px;
   width: 600px;
   border: 5px solid rgba(205, 49, 78, 1);
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .bottom-layer {
@@ -125,8 +131,26 @@ body {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  justify-content: flex-start | center;
   margin: 2px;
   height: 100px;
   width: 600px;
   border: 5px solid rgba(132, 35, 205, 1);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon img {
+  display: flex;
+  justify-content: flex-start center;;
+  background-color: white;
+  border: 5px solid black;
+  height: 90px;
+  width: 90px;
+  border-radius: 55px;
+}
+
+.maincake .icon {
+  justify-content: center;
+  align-items: center;
 }
